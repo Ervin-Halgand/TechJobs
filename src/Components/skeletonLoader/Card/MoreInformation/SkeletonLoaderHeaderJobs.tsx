@@ -22,7 +22,6 @@ const SkeletonLoaderHeaderJobs = () => {
             </div>
             <div className="job--description my-3 px-2 border-gray-300 border-t-2 pt-4">
                 <div className='w-full descHeight loading'>
-
                 </div>
             </div>
         </>
