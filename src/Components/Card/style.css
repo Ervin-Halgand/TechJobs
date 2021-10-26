@@ -1,7 +1,6 @@
 .card {
     position: relative;
     transition: transform .5s ease;
-    opacity: .95;
 }
 
 .description {
