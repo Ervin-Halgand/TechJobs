@@ -3,6 +3,11 @@
     transition: transform .5s ease;
 }
 
+.card-color {
+    background: rgb(184, 219, 219);
+    background: radial-gradient(circle, rgba(184, 219, 219, 1) 0%, rgba(163, 210, 210, 0.9500175070028011) 100%);
+}
+
 .description {
     display: flex;
     flex: 1;
