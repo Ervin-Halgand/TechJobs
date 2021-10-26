@@ -1,0 +1,12 @@
+.text-image {
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-image: url('../../assets/HeaderImage.jpg');
+    background-size: contain;
+}
+
+body {
+    background-color: rgb(252, 247, 242);
+    min-height: 100vh;
+}

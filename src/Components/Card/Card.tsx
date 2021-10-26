@@ -22,14 +22,14 @@ interface card {
 function Card({ title, type, created_at, company_name, company_logo, location, id, salary }: card) {
     return (
         <Link to={`jobs/${id}`}>
-            <div className="w-full h-full bg-gray-200 relative rounded-lg cursor-pointer shadow-sm card">
-                <div className="bg-white  rounded-md overflow-hidden absolute -top-5 left-4 h-12 w-12 img-container">
+            <div className="w-full h-full bg-gray-200 relative rounded-lg cursor-pointer shadow-sm card card-color">
+                <div className="bg-white  rounded-md overflow-hidden absolute -top-7 left-4 h-14 w-14 img-container">
                     <img className="object-contain w-full h-full" src={company_logo ? company_logo : NoLogo} alt={`logo-${company_name}`} />
                 </div>
                 <div className="p-3 description h-full">
                     <div className="mt-5 flex items-center">
                         <div className="text-gray-600">{timeAgo.format(created_at)}</div>
-                        <div className="rounded-full h-2 w-2 bg-gray-300 ml-2" />
+                        <div className="rounded-full h-2 w-2 bg-indigo-500 ml-2" />
                         <div className="ml-2 text-gray-600">{type}</div>
                     </div>
                     <h3><strong className="text-black inline-block my-1 text-md">{title}</strong></h3>
