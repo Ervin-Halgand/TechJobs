@@ -23,7 +23,6 @@ const LandingPage: FunctionComponent = () => {
         if (date)
             elapsed = (new Date().getTime() - new Date(JSON.parse(date)).getTime()) / (3600000 * 8);
         if (elapsed < 1 && StringifiedJobs) {
-            console.log("cached jobs");
             setJobs(JSON.parse(StringifiedJobs));
             setError(false);
         }
