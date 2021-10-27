@@ -5,6 +5,20 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background: rgb(182, 226, 235);
+    background: linear-gradient(126deg, rgba(182, 226, 235, 1) 0%, rgba(191, 229, 236, 1) 50%, rgba(182, 226, 235, 1) 100%);
+}
+
+body::-webkit-scrollbar {
+    width: 12px;
+    background-color: #E5E7EB;
+}
+
+body::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    min-height: 150px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+    background-color: #438A90;
 }
 
 * {

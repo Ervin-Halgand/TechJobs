@@ -23,13 +23,13 @@ const HeaderJobs = ({ title, type, created_at, company, company_logo, location, 
     let history = useHistory();
     return (
         <div className="w-full flex text-md relative flex-wrap md:flex-nowrap">
-            <div className="bg-white absolute -top-20 h-20 w-20 img-container sm:h-32 sm:w-32 md:h-60 md:w-60 sm:static rounded-2xl overflow-hidden">
+            <div className="absolute -top-20 h-20 w-20 img-container sm:h-32 sm:w-32 md:h-60 md:w-60 sm:static rounded-2xl overflow-hidden color_background_card">
                 <img className="object-contain w-full h-full" src={company_logo ? company_logo : NoLogo} alt={`logo-${company}`} />
             </div>
             <div className="lg:ml-10 ml-2 relative flex flex-1 flex-col">
                 <div className="flex items-center ">
                     <div className="text-gray-600">{timeAgo.format(created_at)}</div>
-                    <div className="rounded-full h-2 w-2 bg-indigo-500 ml-2" />
+                    <div className="rounded-full h-2 w-2 color_background_card ml-2" />
                     <div className="ml-2 text-gray-600">{type}</div>
                 </div>
                 <h2><strong className="text-black inline-block  mt-3 mb-1 md:text-xl">{title}</strong></h2>

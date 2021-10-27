@@ -41,7 +41,7 @@ const LandingPage: FunctionComponent = () => {
     }, []);
 
     return (
-        <div className="flex flex-col min-h-screen relative" style={{ backgroundColor: "rgb(228,239,241)" }}>
+        <div className="flex flex-col min-h-screen relative">
             <div className="demo_wrap"></div>
             {(jobs && jobs.jobs.length < 1) && <div className="flex justify-center pt-24 sm:pt-12 text-4xl text-gray-600 min-h-screen"> <div>No jobs listed</div></div>}
             {(error && !loading) && <div className="flex flex-col items-center justify-start pt-20 sm:pt-9 text-gray-600 min-h-screen">

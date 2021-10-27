@@ -33,6 +33,7 @@
 .cardLoader {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.16), 0 2px 4px rgba(0, 0, 0, 0.23);
     border-radius: 5px;
+    z-index: 1;
 }
 
 .loading::after {

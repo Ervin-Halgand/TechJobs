@@ -28,13 +28,14 @@ const JobsInformation = ({ apiGithub }: { apiGithub: GithubJobsApi; }) => {
         // eslint-disable-next-line
     }, [id]);
     return (
-        <div>
+        <div className='flex flex-col relative min-h-screen'>
+            <div className="demo_wrap"></div>
             <section className="m-1 mt-24 p-4 rounded-xl sm:m-8 sm:mt-3 card-color">
                 {isLoading && <SkeletonLoaderHeaderJobs />}
                 {job && <><HeaderJobs salary={job.salary} how_to_apply={job.url} location={job.candidate_required_location} title={job.title} type={job.job_type}
                     created_at={new Date(job.publication_date)} company={job.company_name} company_logo={job.company_logo_url} />
                     <div className="job--description my-3 px-2 border-gray-300 border-t-2 pt-4">
-                        {parse(job.description)}
+                    {parse(job.description)}
                     </div></>}
             </section>
         </div>

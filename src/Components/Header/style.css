@@ -6,7 +6,10 @@
     background-size: contain;
 }
 
-body {
-    background-color: rgb(252, 247, 242);
-    min-height: 100vh;
+.color_background_card {
+    background-color: #2b313d;
+}
+
+.text-color-bg {
+    color: #2b313d;
 }
