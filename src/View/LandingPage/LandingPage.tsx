@@ -1,8 +1,8 @@
-import RemotiveApi from '../API/Api';
-import CardLoader from '../Components/skeletonLoader/Card/CardLoader'
-import Card from '../Components/Card/Card'
+import RemotiveApi from '../../API/Api';
+import CardLoader from '../../Components/skeletonLoader/Card/CardLoader'
+import Card from '../../Components/Card/Card'
 import { FunctionComponent, useEffect, useState } from 'react';
-import { RemotiveApiResult } from '../API/model';
+import { RemotiveApiResult } from '../../API/model';
 
 const LandingPage: FunctionComponent = () => {
     const githubAPI = new RemotiveApi();
@@ -42,7 +42,6 @@ const LandingPage: FunctionComponent = () => {
 
     return (
         <div className="flex flex-col min-h-screen relative">
-            <div className="demo_wrap"></div>
             {(jobs && jobs.jobs.length < 1) && <div className="flex justify-center pt-24 sm:pt-12 text-4xl text-gray-600 min-h-screen"> <div>No jobs listed</div></div>}
             {(error && !loading) && <div className="flex flex-col items-center justify-start pt-20 sm:pt-9 text-gray-600 min-h-screen">
                 <h2 className="mb-7 text-xl">An Error occured please reload</h2>

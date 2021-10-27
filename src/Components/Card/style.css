@@ -8,6 +8,10 @@
     background: radial-gradient(circle, rgba(184, 219, 219, 1) 0%, rgba(163, 210, 210, 0.9500175070028011) 100%);
 }
 
+.card__Rounded-color {
+    background-color: #8baeaf;
+}
+
 .description {
     display: flex;
     flex: 1;

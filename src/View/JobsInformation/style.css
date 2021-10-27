@@ -1,6 +1,11 @@
+.border__color__desc {
+    border-color: #8baeaf;
+}
+
 li::before {
     content: "\2022";
-    color: rgba(59, 130, 246, 1);
+    font-size: 20px;
+    color: #8baeaf;
     font-weight: bold;
     display: inline-block;
     margin-right: 10px;
@@ -31,15 +36,4 @@ p>a {
     font-weight: 700;
     margin-bottom: 10px;
     text-transform: upperCase;
-}
-
-.demo_wrap {
-    background: repeat url("../assets/1.png");
-    position: absolute;
-    left: 0;
-    top: -300px;
-    width: 100%;
-    height: 100%;
-    opacity: .25;
-    z-index: -1;
 }

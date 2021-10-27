@@ -1,4 +1,5 @@
-import HeaderBackground from '../../assets/HeaderImage.jpg';
+import { FunctionComponent } from 'react';
+import './style.css'
 
 interface ButtonProps {
     text: string,
@@ -6,11 +7,10 @@ interface ButtonProps {
     clicked: Function
 }
 
-const Button = ({ text, addClass, clicked }: ButtonProps) => {
+const Button: FunctionComponent<ButtonProps> = ({ text, addClass, clicked }) => {
     return (
-        <button onClick={() => clicked()} className={`hover:text-black text-white relative flex overflow-hidden rounded-md md:px-7 sm:px-2 ${addClass} focus:outline-none`}>
-            <img src={HeaderBackground} alt="Header background" className="z-0 absolute object-cover top-0 left-0 w-full h-full" />
-            <p className="z-10 transition duration-300 ease-in-out"> {text}</p>
+        <button onClick={() => clicked()} className={`transition duration-300 ease-in-out relative button flex overflow-hidden rounded-md md:px-7 sm:px-2 ${addClass} focus:outline-none`}>
+            <p className="z-10"> {text}</p>
         </button>
     );
 }

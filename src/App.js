@@ -1,7 +1,7 @@
 import GithubJobsApi from './API/Api';
 import Header from './Components/Header/Header'
-import LandingPage from './View/LandingPage'
-import JobsInformation from './View/JobsInformation'
+import LandingPage from './View/LandingPage/LandingPage'
+import JobsInformation from './View/JobsInformation/JobsInformation'
 
 import {
   BrowserRouter as Router,
@@ -15,6 +15,8 @@ const App = () => {
 
   return (
     <Router>
+      <div className="demo_wrap"></div>
+      <div className="demo_wrap_2"></div>
       <Switch>
         <Route exact path="/">
           <Header />
@@ -22,7 +24,7 @@ const App = () => {
         </Route>
         <Route exact path="/jobs/:id">
           <Header />
-          <JobsInformation apiGithub={githubAPI} />
+          <JobsInformation />
         </Route>
       </Switch>
     </Router>
